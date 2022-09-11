@@ -6,6 +6,18 @@ end
 
 local M = {}
 
+M.dimasganteng = {
+  i = {
+    ["<C-z>"] = { "<cmd> undo <CR>", "undo" },
+    ["<C-`>"] = { "<cmd> redo <CR>", "redo" },
+  },
+
+  n = {
+    ["<C-q>"] = { "<cmd> NvimTreeToggle <CR>", "tree" },
+    ["<C-S-s"] = { "<cmd> w! <CR>", "save override" },
+  }
+}
+
 M.general = {
   i = {
     -- go to  beginning and end

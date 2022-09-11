@@ -20,6 +20,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd "PackerSync"
 end
 
+
 pcall(require, "custom")
 
 require("core.utils").load_mappings()

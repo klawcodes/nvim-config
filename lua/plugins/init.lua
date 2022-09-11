@@ -222,7 +222,9 @@ local plugins = {
   --pretier
   ["jose-elias-alvarez/null-ls.nvim"] = {},
   ["MunifTanjim/prettier.nvim"] = {},
-
+  
+  --discord
+  ["andweeb/presence.nvim"] = {},
 
   --jsx-ts
   ["leafgarland/typescript-vim"] = {},
