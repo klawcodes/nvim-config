@@ -222,9 +222,8 @@ local plugins = {
   --pretier
   ["jose-elias-alvarez/null-ls.nvim"] = {},
   ["MunifTanjim/prettier.nvim"] = {},
-  
-  --discord
-  ["andweeb/presence.nvim"] = {},
+
+
 
   --jsx-ts
   ["leafgarland/typescript-vim"] = {},
@@ -252,6 +251,23 @@ local plugins = {
 })
     end
   },
+
+  ["alvan/vim-closetag"] = {},
+  ["goolord/alpha-nvim"] = {
+    requires = { 'kyazdani42/nvim-web-devicons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+  },
+
+  ["iamcco/markdown-preview.nvim"] = {
+    run = "cd app && npm install",
+    config = function()
+        vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+  
   
 }
 
